@@ -14,8 +14,8 @@ export class ShopPage {
     console.log('ionViewDidLoad ShopPage');
   }
 
-  onClickToBuyout() {
-    this.navCtrl.push(BuyoutPage);
+  onClickToBuyout(item: string) {
+     this.navCtrl.push(BuyoutPage, {itemName: item});  
   } 
 
 }
